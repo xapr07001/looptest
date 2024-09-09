@@ -1,0 +1,11 @@
+int input;
+do{
+    Console.WriteLine("Ange ett tal mellan 1 och 100.");
+    input = int.Parse(Console.ReadLine());
+}while(input <= 0 || input > 100);
+
+int tal = input - 100;
+do{
+    tal--;
+    Console.WriteLine(-tal);
+}while(tal > -101);
